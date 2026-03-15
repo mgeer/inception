@@ -1,0 +1,25 @@
+{
+  "id": 17,
+  "title": "兽医费用飙升42%远超通胀，宠物保险却排除最需要的老年和有病史宠物",
+  "who": "宠物主人，尤其是养狗（美国约9000万只）和养猫（7400万只）的家庭。投保率仍为个位数百分比，绝大多数宠物主人在「裸奔」。",
+  "scene": "宠物突发疾病或意外时，主人面临数千到上万美元的兽医账单。想买保险时发现老年宠物或有既往病史的宠物被拒保，日常护理（体检、疫苗、牙科）也不在保障范围内。",
+  "howMuch": "兽医服务价格自2019年以来飙升42%（同期整体物价仅涨22%）。一位宠物主人因猫咪两次健康危机累积$14,000账单，至今仍欠$8,000。狗保险月均保费从2019至2024年上涨27%至$62/月。",
+  "current": "自费承担（高额信用卡债务）、使用宠物健康信用卡分期（CareCredit等，利率高）、推迟非紧急治疗、众筹（GoFundMe宠物类别增长迅速）、选择安乐死而非昂贵治疗。",
+  "trigger": "后疫情宠物潮带来大量首次养宠家庭，现在这些宠物进入中老年，医疗需求激增。兽医行业人手短缺推高费用。通胀压力下家庭预算更紧张。",
+  "evidence": [
+    {
+      "source": "NBC News / 劳工统计局",
+      "metrics": "兽医服务价格自2019年以来上涨42%",
+      "quote": "Pet service prices surged 42% since 2019 vs. 22% for goods overall",
+      "url": "https://www.nbcnews.com/business/consumer/pet-insurance-spending-rises-vet-costs-climb-rcna215276"
+    },
+    {
+      "source": "NBC News",
+      "metrics": "个人案例，$14,000账单",
+      "quote": "He was just one big pre-existing condition",
+      "url": "https://www.nbcnews.com/business/consumer/pet-insurance-spending-rises-vet-costs-climb-rcna215276"
+    }
+  ],
+  "round": 6,
+  "date": "2026-03-16"
+}

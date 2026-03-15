@@ -1,0 +1,25 @@
+{
+  "id": 13,
+  "title": "订阅服务用暗模式阻止取消，FTC保护规则被法院否决后消费者更无助",
+  "who": "所有订阅制服务的消费者，尤其是同时使用多个订阅（音乐、视频、食品配送、SaaS）的用户。美国消费者平均拥有12个付费订阅，每月支出超200美元。",
+  "scene": "用户想取消不再使用的订阅时，发现取消流程极其繁琐——44个服务平均每个含近2个暗模式，总共需要121次点击和89个屏幕页面。Confirmshaming（羞辱式挽留）是最常见手段。",
+  "howMuch": "84个暗模式分布在44个主流服务中。音频类订阅最严重（39个暗模式）。食品配送类点击次数最多。用户因嫌麻烦放弃取消，持续被扣费。FTC的Click-to-Cancel规则在2025年中被法院否决，联邦层面保护回退。",
+  "current": "手动逐个取消（极高摩擦），或使用Trim/Rocket Money等第三方工具（需授权银行账户，隐私顾虑大）。部分用户直接注销信用卡来止血。",
+  "trigger": "FTC保护规则被否决意味着暗模式将更加猖獗。订阅经济持续膨胀，AI时代新增大量AI工具订阅。消费者对「订阅疲劳」的愤怒达到临界点。",
+  "evidence": [
+    {
+      "source": "KnownHost Blog（研究报告）",
+      "metrics": "分析44个订阅服务，发现84个暗模式实例",
+      "quote": "Across 44 subscriptions analyzed, 84 dark patterns were found — an average of nearly 2 per service. Cancelling all subscriptions required 121 clicks and 89 screens.",
+      "url": "https://www.knownhost.com/blog/hardest-subscriptions-to-cancel/"
+    },
+    {
+      "source": "Coulson P.C.等法律机构",
+      "metrics": "多家法律机构和媒体报道",
+      "quote": "The Click-to-Cancel rule is not in effect, and the rulemaking is effectively dead — struck down by the courts in mid-2025.",
+      "url": "https://www.coulsonpc.com/coulson-pc-blog/dark-patterns-ftc-click-to-cancel-rule"
+    }
+  ],
+  "round": 5,
+  "date": "2026-03-16"
+}

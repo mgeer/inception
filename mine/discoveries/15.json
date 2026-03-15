@@ -1,0 +1,25 @@
+{
+  "id": 15,
+  "title": "子女缺乏简便工具远程管理老年父母的设备，老人频繁中招恶意软件和诈骗",
+  "who": "需要帮助老年父母使用技术设备的成年子女（30-55岁），以及65岁以上、认知能力逐渐衰退的老年人。全球老龄化加速，仅中国60岁以上人口超3亿。",
+  "scene": "老年人在使用手机/电脑时，被YouTube虚假广告诱导下载恶意软件、误触飞行模式断网无法自修、打开大量标签页迷失方向、忘记密码删除关键App、保存诈骗者联系方式。子女需要远程排查但缺乏合适工具。",
+  "howMuch": "一位父亲因YouTube广告安装恶意VPN和清理工具花了£500，毁坏两台M1 iMac。HN帖子278点、370条评论，几乎每条评论都有切身经历。认知衰退者（帕金森、阿尔茨海默）更是逐步丧失所有设备使用能力。",
+  "current": "子女用企业级MDM工具（如Intune）管理父母设备（太复杂）、取消管理员权限（正常操作也被阻止）、用Apple Family Sharing限制（功能有限）、每周电话/上门远程协助（耗时巨大）。",
+  "trigger": "现代UI设计越来越依赖隐藏手势和不可见按钮，对老年人更不友好。AI诈骗日趋逼真，老年人防骗难度升级。同时更多政务和医疗服务强制数字化，老年人无法脱离技术。",
+  "evidence": [
+    {
+      "source": "Hacker News (Ask HN)",
+      "metrics": "278 points, 370 comments",
+      "quote": "My father has destroyed two M1 iMac installs by installing VPN packages and system cleaners after watching YouTube... spending £500.",
+      "url": "https://news.ycombinator.com/item?id=40127400"
+    },
+    {
+      "source": "Hacker News (Ask HN)",
+      "metrics": "同帖多条高赞评论",
+      "quote": "There are lots of hidden gestures and actions you have no clue about unless someone shows you. iOS doesn't really mark clickable elements / buttons anymore.",
+      "url": "https://news.ycombinator.com/item?id=40127400"
+    }
+  ],
+  "round": 5,
+  "date": "2026-03-16"
+}

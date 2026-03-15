@@ -357,6 +357,43 @@ header {
   padding: 8px 12px;
 }
 
+/* Favorite Button */
+.fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--text-dim);
+  transition: all 0.2s;
+  padding: 2px 4px;
+  line-height: 1;
+}
+
+.fav-btn:hover { color: var(--accent); transform: scale(1.15); }
+.fav-btn.active { color: var(--accent); }
+
+.card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.list-cell-fav {
+  width: 36px;
+  text-align: center;
+}
+
+.fav-star-list {
+  color: var(--text-dim);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.fav-star-list:hover { color: var(--accent); }
+.fav-star-list.active { color: var(--accent); }
+
 /* Empty State */
 .empty-state { text-align: center; padding: 80px 20px; }
 .empty-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.3; }
@@ -386,6 +423,7 @@ let state = {
   view: localStorage.getItem('mine_view') || 'reading',
   currentIndex: parseInt(localStorage.getItem('mine_index') || '0'),
   evidenceOpen: {},
+  favorites: new Set(JSON.parse(localStorage.getItem('mine_favorites') || '[]')),
   lastDiscoveryCount: 0,
   _lastStatusMsg: '',
   _needsRender: true,
@@ -473,6 +511,32 @@ function savePosition() {
   localStorage.setItem('mine_view', state.view);
 }
 
+function toggleFav(id, e) {
+  if (e) e.stopPropagation();
+  const nowFav = state.favorites.has(id);
+  if (nowFav) {
+    state.favorites.delete(id);
+  } else {
+    state.favorites.add(id);
+  }
+  localStorage.setItem('mine_favorites', JSON.stringify([...state.favorites]));
+
+  // Update star elements in place without full re-render
+  const isFav = state.favorites.has(id);
+  document.querySelectorAll(`[data-fav-id="${id}"]`).forEach(el => {
+    el.textContent = isFav ? '\u2605' : '\u2606';
+    el.classList.toggle('active', isFav);
+    if (el.title !== undefined) el.title = isFav ? '取消收藏' : '收藏';
+  });
+
+  // Update favorites count in tab
+  const favTab = document.querySelector('[data-view="favorites"]');
+  if (favTab) favTab.textContent = '收藏' + (state.favorites.size ? ' ' + state.favorites.size : '');
+
+  // If in favorites view and un-favorited, need full re-render to remove the row
+  if (state.view === 'favorites' && nowFav) render();
+}
+
 function toggleEvidence(id) {
   state.evidenceOpen[id] = !state.evidenceOpen[id];
   render();
@@ -495,6 +559,7 @@ function render() {
         <div class="view-toggle">
           <button class="view-btn ${state.view === 'reading' ? 'active' : ''}" onclick="switchView('reading')">阅读</button>
           <button class="view-btn ${state.view === 'list' ? 'active' : ''}" onclick="switchView('list')">列表</button>
+          <button class="view-btn ${state.view === 'favorites' ? 'active' : ''}" data-view="favorites" onclick="switchView('favorites')">收藏${state.favorites.size ? ' ' + state.favorites.size : ''}</button>
         </div>
       </div>
     </header>
@@ -519,6 +584,8 @@ function render() {
     `;
   } else if (state.view === 'reading') {
     html += renderReading();
+  } else if (state.view === 'favorites') {
+    html += renderFavorites();
   } else {
     html += renderList();
   }
@@ -564,7 +631,10 @@ function renderReading() {
   return `
     <div class="reading-view">
       ${renderNav('top')}
-      <div class="card-number">#${d.id} \u00B7 ${esc(d.date || '')} \u00B7 第${d.round}轮</div>
+      <div class="card-top-row">
+        <span class="card-number">#${d.id} \u00B7 ${esc(d.date || '')} \u00B7 第${d.round}轮</span>
+        <button class="fav-btn ${state.favorites.has(d.id) ? 'active' : ''}" data-fav-id="${d.id}" onclick="toggleFav(${d.id})" title="${state.favorites.has(d.id) ? '取消收藏' : '收藏'}">${state.favorites.has(d.id) ? '\u2605' : '\u2606'}</button>
+      </div>
       <h2 class="card-title">${esc(d.title)}</h2>
 
       <div class="section">
@@ -615,6 +685,7 @@ function renderNav(position) {
 function renderList() {
   const rows = [...state.discoveries].reverse().map(d => `
     <tr class="list-row" onclick="goTo(${state.discoveries.indexOf(d)})">
+      <td class="list-cell list-cell-fav"><span class="fav-star-list ${state.favorites.has(d.id) ? 'active' : ''}" data-fav-id="${d.id}" onclick="toggleFav(${d.id}, event)">${state.favorites.has(d.id) ? '\u2605' : '\u2606'}</span></td>
       <td class="list-cell list-cell-id">#${d.id}</td>
       <td class="list-cell list-cell-title">${esc(d.title)}</td>
       <td class="list-cell list-cell-date">${esc(d.date || '')}</td>
@@ -625,6 +696,42 @@ function renderList() {
     <div class="list-view">
       <table class="list-table">
         <tr class="list-header">
+          <td class="list-cell list-cell-fav"></td>
+          <td class="list-cell">#</td>
+          <td class="list-cell">痛点</td>
+          <td class="list-cell" style="text-align:right">日期</td>
+        </tr>
+        ${rows}
+      </table>
+    </div>
+  `;
+}
+
+function renderFavorites() {
+  const favItems = state.discoveries.filter(d => state.favorites.has(d.id));
+  if (favItems.length === 0) {
+    return `
+      <div class="empty-state">
+        <div class="empty-icon">\u2606</div>
+        <div class="empty-title">还没有收藏</div>
+        <div class="empty-desc">阅读痛点时点击 \u2606 即可收藏</div>
+      </div>
+    `;
+  }
+  const rows = [...favItems].reverse().map(d => `
+    <tr class="list-row" onclick="goTo(${state.discoveries.indexOf(d)})">
+      <td class="list-cell list-cell-fav"><span class="fav-star-list active" onclick="toggleFav(${d.id}, event)">\u2605</span></td>
+      <td class="list-cell list-cell-id">#${d.id}</td>
+      <td class="list-cell list-cell-title">${esc(d.title)}</td>
+      <td class="list-cell list-cell-date">${esc(d.date || '')}</td>
+    </tr>
+  `).join('');
+
+  return `
+    <div class="list-view">
+      <table class="list-table">
+        <tr class="list-header">
+          <td class="list-cell list-cell-fav"></td>
           <td class="list-cell">#</td>
           <td class="list-cell">痛点</td>
           <td class="list-cell" style="text-align:right">日期</td>

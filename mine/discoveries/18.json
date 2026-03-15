@@ -1,0 +1,25 @@
+{
+  "id": 18,
+  "title": "小企业主记账拖延导致税季崩溃，2026年税法变动进一步加剧合规焦虑",
+  "who": "小企业主和个体经营者，尤其是没有专职财务人员的微型企业（1-10人）。美国约3300万小企业中，大部分缺乏专业记账流程。",
+  "scene": "日常记账被当作「以后再说」的任务不断推迟，到税季时面对堆积如山的收据和混乱的账目。个人与企业资金混用破坏LLC法律保护，季度预估税款频繁漏缴导致罚金叠加，准备太晚丧失税务筹划窗口。",
+  "howMuch": "混乱的账本直接堵死贷款、合伙、出售公司的机会。漏缴季度税产生复利罚金。合伙企业数据不一致触发IRS审计。大量小企业主感到'behind, overwhelmed, or anxious'。",
+  "current": "年底突击补账（代价高昂）、简单Excel表格（容易出错）、QuickBooks等工具（学习曲线陡峭，许多人买了不用）、花钱请会计（每月$200-500，微型企业难承受）。",
+  "trigger": "2026年IRS扩大了报告要求并更新税法，记账合规复杂度上升。AI记账工具兴起但尚未达到「傻瓜化」程度。越来越多自由职业者和副业创业者加入，但他们缺乏基本财务知识。",
+  "evidence": [
+    {
+      "source": "GNEC.org（Greater National Education Council）",
+      "metrics": "专业机构2026年2月发布",
+      "quote": "clean books create opportunity; messy books close doors",
+      "url": "https://gnec.org/2026/02/25/taming-the-financial-monster-small-business-bookkeeping-for-the-tax-season/"
+    },
+    {
+      "source": "NeoVision CPA",
+      "metrics": "多篇专业文章提及",
+      "quote": "heading into the 2026 tax filing season, bookkeeping isn't just a background task anymore, with recent IRS updates, expanded reporting requirements, and ongoing tax law changes",
+      "url": "https://www.neovisioncpa.com/how-the-2026-tax-law-changes-impact-your-small-business-what-to-know-before-you-file/"
+    }
+  ],
+  "round": 6,
+  "date": "2026-03-16"
+}

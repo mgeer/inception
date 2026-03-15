@@ -1,0 +1,25 @@
+{
+  "id": 14,
+  "title": "医疗预约App体验极差，61%的患者因此放弃就医",
+  "who": "需要预约医生的患者，尤其是管理多个医疗机构、需要定期复诊的慢性病患者和老年人。美国数亿人依赖医疗门户网站/App预约。",
+  "scene": "患者尝试在线预约医生时，遭遇保险验证失败、界面混乱难以导航、签到流程反复要求身份验证、预约系统不允许合理时间段、取消后仍发送提醒等问题。",
+  "howMuch": "61%的患者因在线预约困难而直接跳过医疗预约——这不只是体验问题，直接影响健康结果。用户需要医生助理协助才能完成App操作。心理健康患者在最需要帮助时被系统流程反复折腾后遭拒。",
+  "current": "打电话预约（等待时间长、仅工作时间）、亲自到场排队、让家人代为操作App。部分用户干脆推迟就医。",
+  "trigger": "后疫情时代医疗系统数字化加速，越来越多机构强制使用患者门户App。同时医疗人手短缺，电话预约更难接通，数字渠道成为唯一选择但体验跟不上。",
+  "evidence": [
+    {
+      "source": "Notable Health / TechTarget调查",
+      "metrics": "61%的患者因在线预约困难跳过就医",
+      "quote": "Online Appointment Scheduling Falls Short, Dissuades Care Access for 61%",
+      "url": "https://www.techtarget.com/patientengagement/news/366584744/Online-Appointment-Scheduling-Falls-Short-Dissuades-Care-Access-for-61"
+    },
+    {
+      "source": "Apple App Store (healow App)",
+      "metrics": "多条2-3星差评",
+      "quote": "cluttered and less navigable...took myself and my doctor's assistant to figure out how to add their practice",
+      "url": "https://apps.apple.com/us/app/healow/id595012291"
+    }
+  ],
+  "round": 5,
+  "date": "2026-03-16"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 16,
+  "title": "约会应用沦为「浪漫老虎机」，付费墙、虚假账户和算法操控让用户身心俱疲",
+  "who": "使用 Tinder、Hinge、Bumble 等约会应用的单身成年人（18-45岁），全球用户超3亿。尤其受影响的是免费用户和女性用户。",
+  "scene": "用户试图通过约会应用寻找伴侣时，发现优质匹配被锁在付费墙后（Hinge Roses），收到的消息可能来自虚假账户（FTC已起诉Match Group），算法优先推广热门用户而非真正兼容的对象，滑动机制利用间歇性奖励制造成瘾。",
+  "howMuch": "FTC正式起诉Match.com利用虚假消息诱导付费。心理学家将滑动机制比作老虎机。2025年'swipe fatigue'成为行业热词。68%的欺诈账户已使用AI驱动的聊天引擎。一位记者获取到自己长达800页的个人数据档案。大量女性用户报告遭遇约会暴力。",
+  "current": "忍受免费版的低质量体验、支付高额订阅费（Tinder Gold等）、多平台同时使用增加概率、通过社交圈线下认识人、放弃在线约会回归传统方式。",
+  "trigger": "AI驱动的虚假账户更难识别（68%使用LLM聊天引擎）。Match Group垄断多个平台（Tinder/Hinge/OkCupid/Match），竞争格局恶化。用户隐私意识觉醒但无替代选择。",
+  "evidence": [
+    {
+      "source": "Mentor Research Institute",
+      "metrics": "FTC正式提起诉讼",
+      "quote": "The FTC sued Match Group for sending misleading emails to free users suggesting someone had messaged them — when the messages were often from fake or scam accounts.",
+      "url": "https://www.mentorresearch.org/criticisms-of-tinder-hinge-matchcom-plenty-of-fish-and-okcupid"
+    },
+    {
+      "source": "Mentor Research Institute",
+      "metrics": "800页个人数据被导出",
+      "quote": "A journalist received an 800-page dossier detailing every swipe, message, and location.",
+      "url": "https://www.mentorresearch.org/criticisms-of-tinder-hinge-matchcom-plenty-of-fish-and-okcupid"
+    }
+  ],
+  "round": 6,
+  "date": "2026-03-16"
+}
