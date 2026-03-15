@@ -1,0 +1,25 @@
+{
+  "id": 10,
+  "round": 4,
+  "date": "2026-03-15",
+  "title": "社媒经理持续产出原创内容导致严重倦怠，79% 的策略将在 2026 年失败",
+  "who": "中小企业的社交媒体经理和独立运营者（通常 1-2 人管 3-5 个平台），以及自己做社媒的小企业主。团队严重不足但目标不断攀升。",
+  "scene": "每天要为 Instagram、TikTok、LinkedIn、X 各产出不同格式的内容。算法频繁变动导致昨天有效的策略今天失效。精心策划的帖子可能因算法调整石沉大海。还要回复评论、处理私信、做数据报告。最痛的是向管理层证明社媒的商业价值——点赞和曝光量老板不认，要的是营收归因。",
+  "howMuch": "80+ 位社媒经理参与的调研显示内容倦怠和 ROI 证明是首要痛点。预测 79% 的社媒策略将在 2026 年失败。多平台管理让人精力分散，丧失动力，甚至影响核心业务运营。",
+  "current": "用 Buffer/Hootsuite/Later 等排期工具减少发布操作；用 Canva 快速做图；用 AI 生成文案初稿。但核心问题没解决——内容创意枯竭、算法不可控、ROI 无法量化。工具只解决了发布效率，没解决策略有效性。",
+  "trigger": "平台数量持续增加（Threads、小红书海外版等新平台涌现）。AI 生成内容泛滥让有机触达更难。管理层对社媒投入的耐心在减少，要求更快看到回报。",
+  "evidence": [
+    {
+      "source": "Planable Blog",
+      "metrics": "80+ 位社媒经理调研",
+      "quote": "Being expected to constantly create original content that's able to somehow stand out from the sea of content already shared every day is frustrating and puts many social media managers on a path to burnout",
+      "url": "https://planable.io/blog/social-media-challenges/"
+    },
+    {
+      "source": "Green House Sales and Marketing",
+      "metrics": "79% 失败率预测",
+      "quote": "79% of Social Media Strategies Will Fail in 2026",
+      "url": "https://greenhouseuvu.com/blog/why-79-of-social-media-strategies-will-fail-in-2026-and-how-to-ensure-yours-isnt-one-of-them/"
+    }
+  ]
+}

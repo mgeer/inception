@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "round": 1,
+  "date": "2026-03-15",
+  "title": "开发者平均使用 7.4 个工具，每周浪费 6-15 小时在工具间切换",
+  "who": "中大型团队的软件开发者，尤其是需要同时使用 IDE、项目管理、CI/CD、代码审查、监控等多个工具的全栈和后端工程师。94% 的开发者对当前工具集不满意。",
+  "scene": "日常开发中需要在 IDE、Jira/Linear、GitHub、Slack、Datadog 等 7+ 个工具之间反复切换。查一个 bug 要在 3 个工具里找信息，提交代码后要去另一个工具看 CI，再去另一个工具更新任务状态。每次切换都打断心流。",
+  "howMuch": "行业调查显示每周浪费 6-15 小时在工具切换和上下文恢复上。55% 的开发者不信任跨工具展示的数据准确性。每位开发者每月浪费 20+ 小时在修复可避免的工具集成问题上。",
+  "current": "用多显示器摆开所有工具窗口；用 Raycast/Alfred 快速切换；有些团队自建内部 Dashboard 聚合信息。但根本问题没解决——数据分散在各个工具里，没有一个统一的工作流视图。",
+  "trigger": "AI 工具的加入让工具数量进一步膨胀（Copilot、ChatGPT、Claude 各自一个窗口）。远程/混合办公使异步协作工具增多。微服务架构让监控和调试需要更多工具。",
+  "evidence": [
+    {
+      "source": "byteiota.com / GitKraken Blog",
+      "metrics": "行业调查数据：75% 开发者受影响，94% 不满意",
+      "quote": "Tool sprawl costs devs 15 hours weekly... 94% of developers are dissatisfied with their current toolsets",
+      "url": "https://byteiota.com/tool-sprawl-costs-devs-15-hours-weekly-the-1m-crisis/"
+    },
+    {
+      "source": "Stack Overflow Blog (DeveloperWeek 2026)",
+      "metrics": "Stack Overflow 官方博客，2026-03-05 发布",
+      "quote": "many AI tools aren't actually created to be highly usable—most of the time they are created with efficiency and speed in mind",
+      "url": "https://stackoverflow.blog/2026/03/05/developerweek-2026/"
+    }
+  ]
+}

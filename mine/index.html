@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>需求雷达</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0c0c0c;
+  --surface: #141414;
+  --card: #1a1a1a;
+  --border: #2a2a2a;
+  --border-light: #333;
+  --text: #eaeaea;
+  --text-secondary: #888;
+  --text-dim: #555;
+  --accent: #f59e0b;
+  --accent-hover: #fbbf24;
+  --accent-dim: rgba(245, 158, 11, 0.15);
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 32px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stats {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.view-toggle {
+  display: flex;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.view-btn {
+  padding: 6px 14px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.view-btn:hover { color: var(--text); }
+
+.view-btn.active {
+  background: var(--accent-dim);
+  color: var(--accent);
+}
+
+/* Status Pill - fixed bottom left, minimal */
+.status-pill {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  padding: 5px 12px;
+  border-radius: 14px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 100;
+  transition: opacity 0.3s ease;
+}
+
+.status-pill.running {
+  background: rgba(26, 20, 0, 0.9);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+.status-pill.finished {
+  background: rgba(10, 22, 40, 0.9);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  opacity: 0.6;
+}
+
+.status-pill.idle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.status-spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(245, 158, 11, 0.3);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Reading View */
+.reading-view { animation: fadeIn 0.3s ease; }
+
+.card-number {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.section {
+  margin-bottom: 14px;
+  line-height: 1.7;
+}
+
+.section-label {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+  display: inline;
+  margin-right: 6px;
+}
+
+.section-label::after {
+  content: '';
+}
+
+.section-content {
+  font-size: 14px;
+  color: var(--text);
+  display: inline;
+}
+
+/* Evidence */
+.evidence-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 13px;
+  transition: color 0.2s;
+  margin-top: 4px;
+}
+
+.evidence-toggle:hover { color: var(--accent); }
+
+.evidence-arrow {
+  transition: transform 0.2s;
+  font-size: 12px;
+}
+
+.evidence-arrow.open { transform: rotate(90deg); }
+
+.evidence-list { display: none; margin-top: 8px; }
+
+.evidence-list.open {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.evidence-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  margin-bottom: 10px;
+}
+
+.evidence-source {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.evidence-platform {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.evidence-metrics {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.evidence-quote {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+  padding-left: 12px;
+  border-left: 2px solid var(--border);
+  margin-bottom: 8px;
+}
+
+.evidence-link {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.evidence-link:hover { color: var(--accent); }
+
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav.nav-bottom {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.nav.nav-top {
+  margin-bottom: 16px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.nav-pos {
+  font-size: 14px;
+  color: var(--text-dim);
+  font-family: "SF Mono", "Fira Code", monospace;
+}
+
+/* List View */
+.list-view { animation: fadeIn 0.3s ease; }
+
+.list-table { width: 100%; border-collapse: collapse; }
+
+.list-row {
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.list-row:hover { background: var(--surface); }
+
+.list-cell {
+  padding: 14px 12px;
+  font-size: 14px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.list-cell-id {
+  width: 50px;
+  color: var(--text-dim);
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 13px;
+}
+
+.list-cell-title { color: var(--text); font-weight: 500; }
+
+.list-cell-date {
+  width: 110px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: right;
+}
+
+.list-header { border-bottom: 2px solid var(--border); }
+
+.list-header .list-cell {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 8px 12px;
+}
+
+/* Empty State */
+.empty-state { text-align: center; padding: 80px 20px; }
+.empty-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.3; }
+.empty-title { font-size: 18px; color: var(--text-secondary); margin-bottom: 8px; }
+.empty-desc { font-size: 14px; color: var(--text-dim); }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="container" id="app"></div>
+<div class="status-pill idle" id="statusPill">等待启动</div>
+
+<script>
+const API = '';
+const POLL_INTERVAL = 2000;
+
+let state = {
+  discoveries: [],
+  status: {},
+  view: localStorage.getItem('mine_view') || 'reading',
+  currentIndex: parseInt(localStorage.getItem('mine_index') || '0'),
+  evidenceOpen: {},
+  lastDiscoveryCount: 0,
+  _lastStatusMsg: '',
+  _needsRender: true,
+  _initialized: false
+};
+
+// Polling
+async function pollData() {
+  try {
+    const [statusRes, discRes] = await Promise.all([
+      fetch(`${API}/api/status`),
+      fetch(`${API}/api/discoveries`)
+    ]);
+    const newStatus = await statusRes.json();
+    const discoveries = await discRes.json();
+
+    // Only update status pill if message changed
+    const statusMsg = JSON.stringify(newStatus);
+    if (statusMsg !== state._lastStatusMsg) {
+      state.status = newStatus;
+      state._lastStatusMsg = statusMsg;
+      updateStatusPill();
+    }
+
+    if (Array.isArray(discoveries)) {
+      if (discoveries.length !== state.lastDiscoveryCount) {
+        if (!state._initialized) {
+          // First load: restore saved position, clamp to valid range
+          state._initialized = true;
+          state.currentIndex = Math.min(state.currentIndex, discoveries.length - 1);
+          state.currentIndex = Math.max(state.currentIndex, 0);
+        } else if (discoveries.length > state.lastDiscoveryCount) {
+          // New discoveries arrived — only jump if user was on the last item
+          const wasOnLast = state.currentIndex >= state.lastDiscoveryCount - 1;
+          if (wasOnLast) {
+            state.currentIndex = state.lastDiscoveryCount;
+            state.view = 'reading';
+            state.evidenceOpen = {};
+            savePosition();
+          }
+          // Otherwise stay put, user is still reading
+        }
+        state.discoveries = discoveries;
+        state.lastDiscoveryCount = discoveries.length;
+        state._needsRender = true;
+      }
+    }
+  } catch (e) {
+    // Server not ready yet, keep polling
+  }
+  if (state._needsRender) {
+    render();
+    state._needsRender = false;
+  }
+  setTimeout(pollData, POLL_INTERVAL);
+}
+
+// Navigation
+function goTo(index) {
+  state.currentIndex = index;
+  state.view = 'reading';
+  state.evidenceOpen = {};
+  savePosition();
+  render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goNext() {
+  if (state.currentIndex < state.discoveries.length - 1) goTo(state.currentIndex + 1);
+}
+
+function goPrev() {
+  if (state.currentIndex > 0) goTo(state.currentIndex - 1);
+}
+
+function switchView(view) {
+  state.view = view;
+  state.evidenceOpen = {};
+  savePosition();
+  render();
+}
+
+function savePosition() {
+  localStorage.setItem('mine_index', state.currentIndex);
+  localStorage.setItem('mine_view', state.view);
+}
+
+function toggleEvidence(id) {
+  state.evidenceOpen[id] = !state.evidenceOpen[id];
+  render();
+}
+
+// Render
+function render() {
+  const app = document.getElementById('app');
+  let html = '';
+
+  // Header
+  html += `
+    <header>
+      <div class="logo">
+        <div class="logo-icon">\u25C9</div>
+        <h1>需求雷达</h1>
+      </div>
+      <div class="header-right">
+        <span class="stats">已发现 ${state.discoveries.length} 个</span>
+        <div class="view-toggle">
+          <button class="view-btn ${state.view === 'reading' ? 'active' : ''}" onclick="switchView('reading')">阅读</button>
+          <button class="view-btn ${state.view === 'list' ? 'active' : ''}" onclick="switchView('list')">列表</button>
+        </div>
+      </div>
+    </header>
+  `;
+
+  // Content
+  if (state.discoveries.length === 0 && !state.status.running) {
+    html += `
+      <div class="empty-state">
+        <div class="empty-icon">\u25C9</div>
+        <div class="empty-title">等待挖掘启动</div>
+        <div class="empty-desc">在终端运行 /mine 开始自动挖掘</div>
+      </div>
+    `;
+  } else if (state.discoveries.length === 0 && state.status.running) {
+    html += `
+      <div class="empty-state">
+        <div class="empty-icon">\u25C9</div>
+        <div class="empty-title">首轮挖掘中...</div>
+        <div class="empty-desc">发现的痛点会自动出现在这里</div>
+      </div>
+    `;
+  } else if (state.view === 'reading') {
+    html += renderReading();
+  } else {
+    html += renderList();
+  }
+
+  app.innerHTML = html;
+}
+
+function updateStatusPill() {
+  const pill = document.getElementById('statusPill');
+  if (!pill) return;
+  const s = state.status;
+  if (!s || (!s.running && !s.phase)) {
+    pill.className = 'status-pill idle';
+    pill.innerHTML = '等待启动';
+  } else if (s.running) {
+    pill.className = 'status-pill running';
+    pill.innerHTML = `<span class="status-spinner"></span>${esc(s.message || '挖掘中...')}`;
+  } else if (s.phase === 'finished') {
+    pill.className = 'status-pill finished';
+    pill.innerHTML = `\u2713 ${esc(s.message || '挖掘完成')}`;
+  } else {
+    pill.className = 'status-pill idle';
+    pill.innerHTML = esc(s.message || '就绪');
+  }
+}
+
+function renderReading() {
+  const d = state.discoveries[state.currentIndex];
+  if (!d) return '';
+
+  const evidenceOpen = state.evidenceOpen[d.id];
+  const evidenceHtml = (d.evidence || []).map(e => `
+    <div class="evidence-item">
+      <div class="evidence-source">
+        <span class="evidence-platform">${esc(e.source)}</span>
+        <span class="evidence-metrics">${esc(e.metrics || '')}</span>
+      </div>
+      <div class="evidence-quote">${esc(e.quote)}</div>
+      ${e.url ? `<a class="evidence-link" href="${esc(e.url)}" target="_blank" rel="noopener">查看原帖 \u2197</a>` : ''}
+    </div>
+  `).join('');
+
+  return `
+    <div class="reading-view">
+      ${renderNav('top')}
+      <div class="card-number">#${d.id} \u00B7 ${esc(d.date || '')} \u00B7 第${d.round}轮</div>
+      <h2 class="card-title">${esc(d.title)}</h2>
+
+      <div class="section">
+        <span class="section-label">谁在痛:</span>
+        <span class="section-content">${esc(d.who)}</span>
+      </div>
+      <div class="section">
+        <span class="section-label">什么场景:</span>
+        <span class="section-content">${esc(d.scene)}</span>
+      </div>
+      <div class="section">
+        <span class="section-label">有多痛:</span>
+        <span class="section-content">${esc(d.howMuch)}</span>
+      </div>
+      <div class="section">
+        <span class="section-label">现在怎么忍:</span>
+        <span class="section-content">${esc(d.current)}</span>
+      </div>
+      <div class="section">
+        <span class="section-label">为什么忍不下去了:</span>
+        <span class="section-content">${esc(d.trigger)}</span>
+      </div>
+
+      <button class="evidence-toggle" onclick="toggleEvidence(${d.id})">
+        <span class="evidence-arrow ${evidenceOpen ? 'open' : ''}">\u25B8</span>
+        证据 (${(d.evidence || []).length})
+      </button>
+      <div class="evidence-list ${evidenceOpen ? 'open' : ''}">
+        ${evidenceHtml}
+      </div>
+
+      ${renderNav('bottom')}
+    </div>
+  `;
+}
+
+function renderNav(position) {
+  const cls = position === 'top' ? 'nav nav-top' : 'nav nav-bottom';
+  return `
+    <div class="${cls}">
+      <button class="nav-btn" onclick="goPrev()" ${state.currentIndex <= 0 ? 'disabled' : ''}>\u2190 上一个</button>
+      <span class="nav-pos">${state.currentIndex + 1} / ${state.discoveries.length}</span>
+      <button class="nav-btn" onclick="goNext()" ${state.currentIndex >= state.discoveries.length - 1 ? 'disabled' : ''}>下一个 \u2192</button>
+    </div>
+  `;
+}
+
+function renderList() {
+  const rows = [...state.discoveries].reverse().map(d => `
+    <tr class="list-row" onclick="goTo(${state.discoveries.indexOf(d)})">
+      <td class="list-cell list-cell-id">#${d.id}</td>
+      <td class="list-cell list-cell-title">${esc(d.title)}</td>
+      <td class="list-cell list-cell-date">${esc(d.date || '')}</td>
+    </tr>
+  `).join('');
+
+  return `
+    <div class="list-view">
+      <table class="list-table">
+        <tr class="list-header">
+          <td class="list-cell">#</td>
+          <td class="list-cell">痛点</td>
+          <td class="list-cell" style="text-align:right">日期</td>
+        </tr>
+        ${rows}
+      </table>
+    </div>
+  `;
+}
+
+function esc(str) {
+  if (!str) return '';
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (state.view !== 'reading') return;
+  if (e.key === 'ArrowLeft') goPrev();
+  if (e.key === 'ArrowRight') goNext();
+});
+
+// Start polling
+pollData();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "id": 8,
+  "round": 3,
+  "date": "2026-03-15",
+  "title": "技术从业者大规模求职失败，HN 出现「谁已经放弃找工作」的热帖",
+  "who": "有 3-15 年经验的软件工程师、产品经理、设计师等技术从业者。被裁员后持续求职 6-12 个月未果，经济和心理双重压力巨大。",
+  "scene": "每天投 10-20 份简历，绝大多数石沉大海。偶尔拿到面试机会，经过 4-6 轮面试后被拒。AI 筛选系统让简历更难通过第一关。猎头联系变少，岗位要求越来越高但薪资不涨。最终开始考虑降级接受低一档的职位。",
+  "howMuch": "HN 上「Who's given up on getting hired?」帖子引发大量讨论，标题本身就说明了问题的严重程度。有人分享了 3 次失业经历，建议接受降薪 30-40% 的职位先上岸再说。求职时间成本巨大（每天 2-4 小时投递+准备面试），持续数月。",
+  "current": "海投简历（LinkedIn/Indeed/公司官网）；找熟人内推；接自由职业过渡；降低薪资预期换取机会。AI 简历优化工具和面试准备工具涌现但效果参差不齐。",
+  "trigger": "2024-2025 年科技大厂持续裁员，岗位供给萎缩。AI 工具替代了部分初中级岗位需求。企业招聘更谨慎，面试流程更长更严格。远程办公让全球人才竞争同一岗位。",
+  "evidence": [
+    {
+      "source": "Hacker News",
+      "metrics": "Ask HN 热帖，2026年1月",
+      "quote": "if you can't find a role at the level or salary you want, scale back and take a lesser role with the goal of proving yourself",
+      "url": "https://news.ycombinator.com/item?id=46472655"
+    }
+  ]
+}

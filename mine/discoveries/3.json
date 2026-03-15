@@ -1,0 +1,25 @@
+{
+  "id": 3,
+  "round": 1,
+  "date": "2026-03-15",
+  "title": "CI 流水线调试必须反复提交代码，本地无法模拟 CI 环境",
+  "who": "DevOps 工程师和全栈开发者，尤其是维护复杂 CI/CD 管线（GitHub Actions、GitLab CI、Jenkins）的团队。团队规模从 3 人到 50 人不等。",
+  "scene": "修改 CI 配置（如 .github/workflows/*.yml）后，无法在本地验证是否正确，只能提交代码触发 CI 跑一遍。发现错误后改一行再提交，等 5-15 分钟出结果，又失败，再改再提交。一个简单的 CI 配置修改可能产生 10+ 次无意义提交。",
+  "howMuch": "每次 CI 调试循环耗时 5-15 分钟等待结果，一次配置修改可能迭代 5-10 轮。HN 用户直接说'hates current CI systems'。Git 历史被大量'fix ci'、'try again'提交污染。Flaky test 的调试更痛苦——需要反复触发才能复现。",
+  "current": "有 act（本地跑 GitHub Actions）但兼容性差，很多 action 本地跑不了。有人用 Docker 模拟但环境不完全一致。大多数人只能'提交-等-看-再改'硬循环。",
+  "trigger": "CI 管线越来越复杂（多阶段、矩阵构建、多平台）。AI 生成的代码需要更多测试覆盖，CI 运行时间变长。微服务架构让集成测试在 CI 中更难调试。有人提出用 LLM 智能选择测试集来减少 CI 时间，说明这个痛点正在催生新的解决方案方向。",
+  "evidence": [
+    {
+      "source": "Hacker News (Ask HN)",
+      "metrics": "22 points, 24 comments",
+      "quote": "Hates current CI systems requiring multiple commits; wants local environment parity with CI for prototyping before commits.",
+      "url": "https://news.ycombinator.com/item?id=46345827"
+    },
+    {
+      "source": "Hacker News (Ask HN)",
+      "metrics": "同一帖子讨论",
+      "quote": "LLM tool for CI pipelines to propose relevant test suites based on code changes and estimate flakiness testing iterations.",
+      "url": "https://news.ycombinator.com/item?id=46345827"
+    }
+  ]
+}

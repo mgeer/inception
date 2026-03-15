@@ -1,0 +1,25 @@
+{
+  "id": 9,
+  "round": 3,
+  "date": "2026-03-15",
+  "title": "在线课程创作者被迫拼凑 6-12 个工具，学生体验支离破碎",
+  "who": "独立课程创作者和小型教育机构（1-5人团队），使用 WordPress+LearnDash 或拼凑多个 SaaS 工具来卖课。他们是教育者不是技术人员，却被迫充当系统管理员。",
+  "scene": "用 LearnDash 做课程内容，Stripe 收款，Mailchimp 发邮件，Zoom 直播，Google Drive 存资料，Teachable 做另一套课。每个系统独立，数据不互通。学生要记多个登录，在不同平台间跳转。一次 WordPress 插件更新就可能让整个课程网站瘫痪。",
+  "howMuch": "LearnDash 标价 199 美元/年，但加上主机（288）、主题（299）、必备插件（499），实际年费约 1296 美元——是宣传价的 6 倍。创作者报告平均拼凑 6-12 个工具。时间大量花在技术维护而非内容创作上。",
+  "current": "部分人迁移到一体化平台（Kajabi、Teachable）但月费 100-300 美元且灵活性低。部分人继续忍受 WordPress 插件生态但痛苦不堪。有人用 Notion+Gumroad 做极简方案但功能有限。",
+  "trigger": "在线教育市场持续增长，更多非技术背景的专家想卖课但被技术门槛挡住。WordPress 插件兼容性问题在 2025-2026 年因 AI 插件增多而加剧。学生对体验的期望被主流 SaaS 拉高，拼凑方案越来越不被接受。",
+  "evidence": [
+    {
+      "source": "FreshLearn Blog",
+      "metrics": "2026年 LearnDash 替代品评测",
+      "quote": "LearnDash's license fee is just $199/year, but the true cost tells a different story... Total: approximately $1,296/year",
+      "url": "https://freshlearn.com/blog/learndash-alternatives/"
+    },
+    {
+      "source": "Learning Revolution",
+      "metrics": "2025-2026课程平台综合评测",
+      "quote": "Creators report being stuck cobbling together 6, 8, even 12 different tools, with none of these systems talking to each other",
+      "url": "https://www.learningrevolution.net/best-online-course-platforms/"
+    }
+  ]
+}

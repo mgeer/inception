@@ -1,0 +1,31 @@
+{
+  "id": 12,
+  "round": 4,
+  "date": "2026-03-15",
+  "title": "家长对孩子屏幕时间管理感到无力，Apple 屏幕时间限制轻易被孩子绕过",
+  "who": "有 5-15 岁孩子的家长，尤其是双职工家庭。他们担心孩子过度使用手机/平板，但自身也有手机依赖问题。",
+  "scene": "给孩子设了 Apple 屏幕时间限制，孩子用各种方法绕过（改时区、卸载重装 app、用 Siri 漏洞等）。家长发现限制被绕过后感到沮丧和无力。想知道孩子实际使用情况但屏幕时间记录不准确。自己也放不下手机，在孩子面前缺乏说服力。",
+  "howMuch": "Pew Research 将屏幕时间定义为当代家庭生活的核心「挣扎」。多个论坛持续报告孩子绕过限制的问题。屏幕时间管理 App 的记录不准确进一步加剧家长焦虑。V2EX 上也有家长发帖求控制孩子观看内容的技术方案（23 条回复）。",
+  "current": "Apple 屏幕时间（最普及但容易被绕过）；第三方管控 App（Bark、Qustodio 等，但功能受限且记录不准）；直接没收设备（引发亲子冲突）；约定使用规则（靠自觉，效果差）。",
+  "trigger": "短视频平台对儿童的吸引力越来越强。AI 生成内容增多，不适宜内容更难过滤。学校要求用平板做作业，「完全禁止」已不现实。家长自身手机依赖加深了矛盾感。",
+  "evidence": [
+    {
+      "source": "Pew Research Center",
+      "metrics": "大规模调研报告，2025年10月",
+      "quote": "In an era of hyperconnectivity, screen time has become a defining feature - and struggle - of family life",
+      "url": "https://www.pewresearch.org/internet/2025/10/08/how-parents-approach-their-kids-screen-time/"
+    },
+    {
+      "source": "Apple Screen Time 评测",
+      "metrics": "综合多个论坛反馈",
+      "quote": "Various forums reveal parents articulate frustration over Screen Time's functionalities, with some pointing out ways kids bypass restrictions",
+      "url": "https://impulsec.com/parental-control-software/apple-screen-time-review/"
+    },
+    {
+      "source": "V2EX",
+      "metrics": "23 条回复",
+      "quote": "小孩子最近喜欢看动画片，我希望可以控制他能看哪些动画片",
+      "url": "https://www.v2ex.com/t/1198360"
+    }
+  ]
+}

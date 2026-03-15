@@ -1,0 +1,25 @@
+{
+  "id": 2,
+  "round": 1,
+  "date": "2026-03-15",
+  "title": "AI 编程工具产出的「微错」代码反而制造技术债，修复时间常超手写",
+  "who": "使用 Copilot、Cursor、Claude Code 等 AI 编程工具的中高级开发者，尤其是在企业环境中工作的工程师。他们对代码质量有要求，但发现 AI 工具产出的代码「看起来对但细节错」。",
+  "scene": "用 AI 生成一段代码后，需要逐行审查。发现变量命名不符合项目规范、边界条件没处理、API 调用方式过时。修改一个地方，AI 又引入新问题。想让 AI 只改某个细节，但它每次都重新生成整段，之前调好的部分又被改掉。",
+  "howMuch": "DeveloperWeek 2026 大会专门讨论了这个问题。开发者反馈「花在验证和修复 AI 输出上的时间有时超过了手写代码的时间」。情绪从最初的兴奋转为挫败——工具承诺提效，实际却制造了需要人工清理的技术债。",
+  "current": "有人退回手写代码；有人只用 AI 生成框架/样板代码然后手动改细节；有人限制 AI 只做补全不做生成。但这些都是在「半用半不用」，没有真正解决 AI 输出质量可控的问题。",
+  "trigger": "2025-2026 年企业大规模推行 AI 编程工具，开发者被要求使用但质量问题在代码审查中集中暴露。AI 工具缺乏公司代码库上下文，产出的代码与项目风格割裂。重新生成的不可控性让增量修改变得不可能。",
+  "evidence": [
+    {
+      "source": "Stack Overflow Blog (DeveloperWeek 2026)",
+      "metrics": "Stack Overflow 官方博客，2026-03-05 发布",
+      "quote": "it can feel less like we're wielding the AI tool for our own purposes and more like the AI tool is taking us on a wild-ride",
+      "url": "https://stackoverflow.blog/2026/03/05/developerweek-2026/"
+    },
+    {
+      "source": "V2EX",
+      "metrics": "70 条回复",
+      "quote": "目前Claude用起来太小心翼翼了，主要用的是Trae Solo和Codebuddy，费用都是10刀一个月，而且还限制用量，感觉不够用啊",
+      "url": "https://www.v2ex.com/t/1178783"
+    }
+  ]
+}

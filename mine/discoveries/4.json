@@ -1,0 +1,31 @@
+{
+  "id": 4,
+  "round": 2,
+  "date": "2026-03-15",
+  "title": "自由职业者每年花 102 小时追讨欠款，65% 的人等 30 天以上才收到钱",
+  "who": "月收入 5000-50000 元的自由职业者和独立顾问，尤其是设计师、开发者、写手等创意类自由职业者。没有专门的财务人员，所有催款、记账、对账都靠自己。",
+  "scene": "项目交付后等客户付款。发完发票后石沉大海，一周后发邮件催，客户说走流程。两周后再催，客户说月底统一付。到了月底还没到账，再催一次。整个过程中还要记录哪些发票已付、哪些未付、哪些逾期。",
+  "howMuch": "平均每年花 102 小时追讨欠款（按 50 美元/小时计约损失 5100 美元）。65% 的自由职业者等待超过 30 天，33% 超过 60 天。19% 在任何时候都有至少一张未付发票。现金流不稳定被列为自由职业者最致命的生存威胁。",
+  "current": "用 Excel/Google Sheets 手动记录发票状态；用 FreshBooks/Wave 等工具但功能太重或太贵；手动发邮件催款（措辞还要客气，怕得罪客户）。有人预收 30-50% 定金，但不是所有客户都接受。",
+  "trigger": "经济下行客户付款更慢；自由职业者数量持续增长导致议价能力下降；跨境业务增多，涉及汇率和跨国付款通道的复杂性。远程工作常态化让更多人成为自由职业者但缺乏财务管理经验。",
+  "evidence": [
+    {
+      "source": "Jobbers - Global Freelance Payment Delay Report 2026",
+      "metrics": "全球调查报告数据",
+      "quote": "65% of freelancers wait over 30 days for payment, time spent chasing late payments averages 102 hours annually",
+      "url": "https://www.jobbers.io/the-global-freelance-client-payment-delay-report-2025-why-63-of-freelancers-wait-over-30-days-to-get-paid/"
+    },
+    {
+      "source": "PainOnSocial Blog",
+      "metrics": "顾问12大痛点盘点",
+      "quote": "Among all consultant pain points, cash flow challenges can be the most threatening to business survival",
+      "url": "https://painonsocial.com/blog/consultant-pain-points"
+    },
+    {
+      "source": "TopNotePad Blog",
+      "metrics": "自由职业者5大挑战",
+      "quote": "Bookkeeping is a common pain point among freelance workers, many professionals who are not accountants aren't familiar with how to do it correctly",
+      "url": "https://topnotepad.com/blog/the-5-biggest-challenges-a-freelancer-faces"
+    }
+  ]
+}

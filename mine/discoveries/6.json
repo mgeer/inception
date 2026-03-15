@@ -1,0 +1,31 @@
+{
+  "id": 6,
+  "round": 2,
+  "date": "2026-03-15",
+  "title": "Notion 的过度灵活反成负担，用户花更多时间设计页面而非实际工作",
+  "who": "个人用户和小团队（1-10人），尤其是尝试用 Notion 做「第二大脑」或全能工作空间的知识工作者。他们被 Notion 的灵活性吸引，却在实际使用中迷失。",
+  "scene": "花了一个周末搭建完美的 Notion 系统——数据库关联、模板、看板视图全配好。用了一周发现维护成本太高，开始花更多时间调整系统而不是写东西。格式化长文档像「和一个友好但注意力涣散的机器人摔跤」。想导出数据发现被锁在平台里。",
+  "howMuch": "多篇 2025-2026 年评测文章和用户迁移博客记录了这个问题。典型用户在搭建 Notion 系统上花 10-20 小时，然后在 1-3 个月内放弃或大幅简化。Obsidian 作为替代方案增长迅速，但又有同步收费贵（8美元/月）和缺乏协作的新痛点。",
+  "current": "部分用户迁移到 Obsidian（本地 Markdown 文件，速度快，数据归自己所有）。部分人退回到 Apple Notes 等极简方案。还有人继续用 Notion 但只用最基础功能，放弃复杂数据库。没有一个方案同时满足灵活性、简洁性和数据主权。",
+  "trigger": "AI 功能加入后 Notion 更臃肿更贵。用户对数据主权的意识增强（担心平台倒闭数据丢失）。远程工作让个人知识管理需求更迫切，但工具复杂度也在膨胀。",
+  "evidence": [
+    {
+      "source": "Sugggest Blog",
+      "metrics": "2026年 Notion 替代品评测",
+      "quote": "Formatting long-form reports feeling like wrestling with a friendly yet distractible robot — reflecting that Notion's generality is also its greatest weakness",
+      "url": "https://sugggest.com/blog/best-notion-alternatives-2026"
+    },
+    {
+      "source": "HAMY 个人博客",
+      "metrics": "软件工程师迁移实录",
+      "quote": "Obsidian's speed and simplicity of editing/organizing experience is refreshing... even if Obsidian abandoned the project, I'd still have all my notes",
+      "url": "https://hamy.xyz/blog/2025-09_notion-to-obsidian-for-notes"
+    },
+    {
+      "source": "ClickUp Blog",
+      "metrics": "Obsidian vs Notion 对比",
+      "quote": "Obsidian Sync being considered absolutely absurd for a feature that should be free and built-in",
+      "url": "https://clickup.com/blog/obsidian-vs-notion/"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": 5,
+  "round": 2,
+  "date": "2026-03-15",
+  "title": "AI 辅助编程（Vibecoding）从原型到可用产品之间存在 100 小时鸿沟",
+  "who": "用 AI 工具（Cursor、Claude、Copilot）快速搭建原型的独立开发者和创业者。技术水平参差不齐，有些是非程序员用 AI 第一次写代码，有些是资深开发者想加速。",
+  "scene": "用 AI 花 2 小时搭出一个能跑的 demo，兴奋地觉得产品快完成了。然后开始处理边界情况、错误处理、用户认证、部署、数据库迁移...每一步 AI 都帮不上忙或者帮倒忙。从 demo 到真正能上线的产品，还需要 100+ 小时的工程工作。",
+  "howMuch": "HN 帖子引发 118 条评论讨论，说明这是开发者社区的共鸣话题。原型 2 小时 vs 产品 100+ 小时，中间存在 50 倍的时间鸿沟。很多非技术创业者在这个阶段放弃。",
+  "current": "硬扛：自己学习补齐工程知识。或者找外包/合伙人处理工程部分。有些人降低标准直接上线半成品。AI 工具在这个阶段的辅助效果急剧下降。",
+  "trigger": "2025-2026 年 vibecoding 概念爆火，大量非技术人员涌入试图用 AI 做产品。AI 工具在原型阶段的体验越来越好，拉高了预期，但工程化阶段的体验没有同步进步，落差感更强。",
+  "evidence": [
+    {
+      "source": "Hacker News",
+      "metrics": "118 points, 118 comments",
+      "quote": "100 hour gap between a vibecoded prototype and a working product",
+      "url": "https://kanfa.macbudkowski.com/vibecoding-cryptosaurus"
+    },
+    {
+      "source": "Stack Overflow Blog (DeveloperWeek 2026)",
+      "metrics": "官方博客",
+      "quote": "it can feel less like we're wielding the AI tool for our own purposes and more like the AI tool is taking us on a wild-ride",
+      "url": "https://stackoverflow.blog/2026/03/05/developerweek-2026/"
+    }
+  ]
+}

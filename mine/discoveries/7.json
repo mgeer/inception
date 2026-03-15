@@ -1,0 +1,25 @@
+{
+  "id": 7,
+  "round": 3,
+  "date": "2026-03-15",
+  "title": "Etsy 卖家被 AI 生成内容洪水冲击，六位数卖家收入同比下滑 19%",
+  "who": "Etsy、Amazon 等平台上的中小卖家，尤其是 Print-on-Demand（按需印刷）和手工类卖家。年收入从几万到几十万不等，通常 1-3 人运营。",
+  "scene": "AI 工具让新店铺能以前所未有的速度批量上架产品，平台被低质 listing 淹没。老卖家的有机搜索排名被稀释，花同样的精力获得的流量和订单持续下降。同时平台算法频繁调整，卖家被迫不断适应新规则。",
+  "howMuch": "一位六位数卖家的收入从 2024 年的 13.5 万美元降到 2025 年的 10.9 万美元（-19%）。64% 的卖家将物流延迟列为最大痛点，52% 面临利润率过低的困境。大量时间浪费在没经过需求验证就设计的产品上。",
+  "current": "手动研究关键词和趋势来验证需求；用 eRank/Marmalead 等工具分析竞争但数据滞后；建独立站分散风险但获客更难。多数卖家仍依赖平台有机流量，缺乏有效对抗 AI 内容洪水的手段。",
+  "trigger": "2025-2026 年 AI 图像生成工具（Midjourney、DALL-E）让任何人都能批量生产设计，POD 门槛降到接近零。Etsy 算法变化进一步压缩老卖家流量。经济下行让消费者更挑剔，竞争从质量转向价格。",
+  "evidence": [
+    {
+      "source": "Love Eat Travel Repeat（卖家博客）",
+      "metrics": "六位数卖家亲身数据",
+      "quote": "My revenue went down. In 2024, I did $135,000 in revenue. In 2025, that number dropped to $109,000.",
+      "url": "https://loveeattravelrepeat.com/is-etsy-still-worth-it-in-2026/"
+    },
+    {
+      "source": "FluentCart（2025年调查）",
+      "metrics": "样本量 3161 名店主",
+      "quote": "64% cited shipping delays as their biggest pain point, 52% reported low margins as a major hurdle",
+      "url": "https://fluentcart.com/blog/is-dropshipping-worth-it/"
+    }
+  ]
+}
