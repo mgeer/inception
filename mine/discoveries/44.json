@@ -1,0 +1,20 @@
+{
+  "id": 44,
+  "title": "东南亚移工赴马来西亚被索取5倍官方招募费，雇主普遍没收护照形成双重债务束缚",
+  "round": 15,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "赴马来西亚工作的印尼、孟加拉国、菲律宾、尼泊尔、缅甸等国移工，尤其是棕榈油种植园、建筑工地和家政服务领域的低技能劳动者，以及寻求海外工作的菲律宾OFW（海外劳工）。",
+  "scene": "移工在本国支付远超官方标准（实际为官方费率5倍）的招募费，以最低工资水平需10个月才能还清债务；抵达马来西亚后，雇主立即没收护照，移工丧失自由流动和维权能力；工资被拖欠3个月以上的情况普遍（800名工人为此大罢工）；菲律宾OFW还被招募中介引导至利率高达130%以上的高利贷公司；联合国将马来西亚对孟加拉国移工的剥削定性为"广泛且系统性的"。",
+  "howMuch": "实际招募费为官方标准5倍；以最低工资还清债务需10个月；马来西亚超80万孟加拉国持证移工；棕榈油种植园38%移工须借贷支付招募费；800名工人因工资被拖欠3个月发动大罢工；菲律宾OFW安置费$800-1700+130%利率贷款；马来西亚现代奴役指数从2016年4.2升至6.3/千人。",
+  "current": "接受债务束缚现实（别无选择）；忍受护照被扣（无法离职维权）；发动罢工（收效甚微）；向工会求助（影响力有限）；部分工人逃跑、失联（进入无证黑市）。",
+  "trigger": "招募中介缺乏监管、处罚成本低；马来西亚雇主法律责任不对等；劳动力输出国政府执行能力弱；移工缺乏信息和法律援助；数字汇款渠道成本高导致债务偿还更难；全球供应链对廉价劳动力的结构性需求。",
+  "evidence": [
+    {
+      "source": "Human Rights Watch (2025-11-26) / Business & Human Rights Resource Centre / Lowy Institute",
+      "metrics": "实际招募费5倍官方价；还债需10个月；38%棕榈油种植园移工借贷；现代奴役指数从4.2升至6.3/千人",
+      "quote": "UN human rights experts described Malaysia's exploitation of Bangladeshi migrant workers as 'widespread and systematic' — workers pay recruitment fees five times the official rate, taking 10 months at minimum wage to repay.",
+      "url": "https://www.hrw.org/news/2025/11/26/rampant-labor-abuses-against-bangladeshi-migrant-workers-in-malaysia"
+    }
+  ]
+}

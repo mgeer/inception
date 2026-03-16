@@ -1,0 +1,20 @@
+{
+  "id": 35,
+  "title": "东南亚90%心理疾病患者无法获得任何治疗，每10万人不足1名精神科医生",
+  "round": 12,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "东南亚（印尼、菲律宾、越南、缅甸等）有心理健康需求的普通民众，尤其是农村居民、年轻人和经济弱势群体，他们面临服务可及性、可负担性和社会污名的三重壁垒。",
+  "scene": "有抑郁、焦虑等心理问题的用户，既找不到附近的精神科医生（印尼每6万人仅1名），也负担不起私立心理咨询费用，还要面对家庭和社区的污名压力而不敢求助；情况严重时只能靠家庭土办法处理，印尼甚至存在将患者隔离禁锢的pasung现象。",
+  "howMuch": "近90%患者无法获得任何正式治疗；每10万人精神科医生不足1名（全球中位数约13名）；心理健康预算不足总卫生支出2%；80-90%有限资源集中在城市医院；印尼约20%人口存在心理障碍。",
+  "current": "依赖家人或宗教/传统方式处理；自行服用非处方药；完全不寻求帮助（内化污名）；少数人尝试远程心理健康App但覆盖面和质量有限。",
+  "trigger": "疫情后东南亚心理健康需求大幅上升但供给几乎没有改善；Z世代对心理健康认知提升但服务基础设施未跟上；手机普及使数字化解决方案有可能规模化触达农村群体。",
+  "evidence": [
+    {
+      "source": "SEA-DREAM.org - A Silent Emergency: Understanding Mental Health in Southeast Asia",
+      "metrics": "治疗缺口近90%；精神科床位0.23/10万（全球中位数3.2）；心理健康专业人员5.3/10万（全球中位数一半）",
+      "quote": "Nearly 90% receive no formal care across Southeast Asia. Many countries have less than one psychiatrist per 100,000 population.",
+      "url": "https://www.sea-dream.org/newsandevents/mental-health"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": 43,
+  "title": "印尼政府运营27,000个互不联通政务App，公民跨部门办事被迫在多系统重复填写相同数据",
+  "round": 15,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "印度尼西亚全体公民，尤其是需要办理驾照更新、商业注册、社保查询、移民手续等跨部门事务的普通民众和中小企业主。",
+  "scene": "公民尝试在线办理政府业务，却面对中央和地方政府合计约27,000个互不联通的政务应用；每个系统独立注册、独立登录，无法互通；同一份身份信息需在不同平台重复填写；App频繁出现超时、无响应按钮、链接过期等技术故障；总统2024年5月下令暂停新政务App开发，但截至2026年2月，整合平台（INA Digital）推进依然迟缓，27,000个App依旧各自为政。",
+  "howMuch": "27,000个互不联通政务App（中央+地方）；系统无互操作性；总统级别关注（2024年5月下令叫停新App开发）；INA Digital整合平台推进迟缓；公民办事需在多系统重复认证和填表。",
+  "current": "忍受等待圈和多次重新登录；雇佣中间人（黄牛）代办政务手续；亲赴线下窗口绕过数字系统；接受流程中断、重头来过的现实。",
+  "trigger": "各部委和地方政府各自开发系统，缺乏顶层统一规划；政治分权导致地方政府自行其是；采购周期和利益方导致重复建设；数据安全和互操作性标准缺位；数字政务变成了"将纸质流程搬上网"而非真正简化流程。",
+  "evidence": [
+    {
+      "source": "The Register (2024-05-28) / en.tempo.co (2026-02-22) / Medium/@beingindonesian",
+      "metrics": "27,000个政务App；总统2024年5月下令暂停新App开发；整合进展迟缓",
+      "quote": "Indonesia's president ordered a halt to the development of new government apps in May 2024 — but as of February 2026, 27,000 apps still operate without interoperability.",
+      "url": "https://www.theregister.com/2024/05/28/indonesia_government_apps/"
+    }
+  ]
+}

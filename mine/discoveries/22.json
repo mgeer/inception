@@ -1,0 +1,20 @@
+{
+  "id": 22,
+  "title": "Gojek计费黑箱加客服AI化，东南亚网约车用户投诉无门被反复薅羊毛",
+  "round": 8,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "印尼、新加坡等东南亚国家的Gojek/Grab用户，以打车/外卖为主，覆盖数千万日活用户群体。",
+  "scene": "司机虚报到达标记提前收等待费、相同距离收费差距4倍、账号无故封禁钱包余额冻结、外卖多次被司机取消后冷餐才到。申诉时只能对话AI机器人，人工客服入口几乎消失。",
+  "howMuch": "Trustpilot上75%评价为1星，整体评分1.5/5；用户被多收的取消费、等待费从4美元到数百元不等；账号封禁导致余额/积分直接归零；情绪极度挫败。",
+  "current": "在App内重复提交申诉（AI自动回复）；在Google/Trustpilot留差评施压；直接放弃损失；转用竞品但东南亚市场同质化严重。",
+  "trigger": "超级App垄断格局下竞争减少，平台降本裁员致客服全面AI化；算法计价黑箱化加剧；用户无议价能力且依赖性强。",
+  "evidence": [
+    {
+      "source": "Trustpilot - gojek.com",
+      "metrics": "75%评价为1星，整体TrustScore 1.5/5（51条1星评价）",
+      "quote": "Driver clicks on arrived way before he has arrived and then charges waiting fee / charged same amount for a 90km journey as a 20km journey",
+      "url": "https://www.trustpilot.com/review/gojek.com"
+    }
+  ]
+}

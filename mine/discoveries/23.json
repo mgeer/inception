@@ -1,0 +1,20 @@
+{
+  "id": 23,
+  "title": "东南亚2.64亿无银行账户者跨境汇款被层层盘剥，汇率差距可吃掉一整天工资",
+  "round": 8,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "菲律宾、印尼、越南等国的外出务工人员及其在家乡的家属，以及数亿无正式银行账户的底层劳动人群。",
+  "scene": "外劳每月向家乡汇款时，无法使用正规数字汇款App（需银行账户），只能依赖中间人或非正规网络，不同渠道间汇率差高达3比索/美元，相当于菲律宾一整天最低工资（约600比索）直接蒸发，且无从比价。",
+  "howMuch": "东南亚52%汇款仍为现金；2.64亿成年人无银行账户；全球因不利汇率造成的损失累计达数十亿美元；每笔汇款手续费因渠道差异可相差3-5倍。",
+  "current": "依赖非正规汇款中间人（收费高但不需要账户）；少数人用家人账户代收；少量人正在迁移到GCash/Dana等数字钱包但覆盖率有限。",
+  "trigger": "通胀加剧家庭对汇款金额的敏感度；数字钱包快速扩张但无银行账户群体仍被排除在外；各国监管碎片化阻碍跨境低成本解决方案落地。",
+  "evidence": [
+    {
+      "source": "Temasek《东南亚数字金融服务未来》报告",
+      "metrics": "2.64亿无银行账户成年人；超70%人口无银行账户或银行服务不足",
+      "quote": "A three-peso difference in exchange rates could mean a PHP600 gap — an entire day's minimum wage in the Philippines — between meeting basic needs or falling short.",
+      "url": "https://www.temasek.com.sg/content/dam/temasek-corporate/news-and-views/resources/reports/future-of-southeast-asia-digital-financial-services.pdf"
+    }
+  ]
+}

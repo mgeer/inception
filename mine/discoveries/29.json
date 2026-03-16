@@ -1,0 +1,20 @@
+{
+  "id": 29,
+  "title": "菲律宾/印尼医疗费用年涨18-19%，82%民众视为头号焦虑，近半支出须自费",
+  "round": 10,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "菲律宾和印尼的普通中低收入家庭，尤其是没有充足雇主医疗保险的个体户、灵活就业者和农村居民。",
+  "scene": "家庭成员生病需要就医时，PhilHealth政府医保覆盖有限，医院账单大头仍需自付；2025年医疗费用预计再涨18.3%（菲律宾）和19.4%（印尼），而工资涨幅远低于此，每次住院都可能掏空家庭储蓄。",
+  "howMuch": "菲律宾个人自付医疗比例44.4%（东南亚第三高）；2024年家庭自付总额6151.6亿比索（同比增11.8%）；2025年涨幅预测18.3%；82%菲律宾人将医疗涨价列为头号担忧。",
+  "current": "依靠家族网络互助借钱看病；拖延就医直到病情严重；购买廉价但覆盖不足的补充保险；依赖政府医院（等待时间长、条件差）。",
+  "trigger": "就诊频率疫情后大幅上升；医院扩张成本转嫁消费者；医疗人才外流导致本地医疗服务供给不足；菲律宾医保体系改革进展缓慢。",
+  "evidence": [
+    {
+      "source": "WTW调研 / Inquirer Business / Manulife调研",
+      "metrics": "菲律宾2025年医疗涨幅18.3%；印尼19.4%；个人自付44.4%；82%民众头号担忧",
+      "quote": "82% of Filipinos identified rising healthcare costs as a top concern. Individuals bearing the largest share of health-care costs in the Philippines at 44.4 percent.",
+      "url": "https://business.inquirer.net/530702/wanted-affordable-high-quality-health-care-for-filipinos"
+    }
+  ]
+}

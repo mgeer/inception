@@ -1,0 +1,20 @@
+{
+  "id": 30,
+  "title": "Shopee东南亚假货泛滥加诈骗横行，买家退款难、账号被封钱款蒸发",
+  "round": 10,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "菲律宾、印尼、马来西亚、越南、泰国的Shopee普通买家，以及在平台上经营的中小卖家。",
+  "scene": "买家收到货后发现与图片描述完全不符（掉包）、或收到假冒品牌商品；申请退款时平台可绕过卖家直接裁定、小卖家损失无法追回；账号无故被封后已付款订单悬空、余额无法提现；冒充Shopee的"兼职刷单"诈骗仍在大规模扩散。",
+  "howMuch": "菲律宾差评平台878条集中投诉；马来西亚、台湾、泰国、印尼、越南均被列入假货高风险市场；Shopee官方2025年2月仍在发警告公告说明诈骗仍活跃。",
+  "current": "申诉平台客服（响应慢、多为机器人）；在社交媒体曝光施压；向菲律宾消费者保护机构投诉（流程复杂）；放弃损失转用Lazada或TikTok Shop。",
+  "trigger": "Shopee快速扩张期间商家资质审核宽松；平台补贴吸引大量灰色商家入驻；买家保护规则设计偏买家而卖家端投诉激增；AI客服替代人工进一步降低申诉成功率。",
+  "evidence": [
+    {
+      "source": "PissedConsumer菲律宾 / Marqvision / Philstar",
+      "metrics": "878条菲律宾Shopee差评；东南亚5个国家列入假货高风险市场",
+      "quote": "Bait-and-switch tactics where items are advertised as nice products but buyers receive something completely different. Users have reported being banned from their Shopee accounts without explanation, with ongoing paid orders and money stuck in their accounts.",
+      "url": "https://shopee-philippines.pissedconsumer.com/review.html"
+    }
+  ]
+}

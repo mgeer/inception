@@ -1,0 +1,20 @@
+{
+  "id": 45,
+  "title": "GrabFood向东南亚餐厅收取25-40%佣金，Foodpanda泰国2025年5月因长期亏损关闭印证危机",
+  "round": 15,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "东南亚（泰国、马来西亚、新加坡、越南、印尼）中小型独立餐厅和外卖商户，尤其是没有品牌溢价、缺乏议价能力的本地小餐馆和新开餐厅。",
+  "scene": "GrabFood和Foodpanda向餐厅收取25%-40%佣金（部分市场高达40%），而餐饮业本身利润率仅5%-15%；在高佣金压力下，餐厅实际在每笔订单上亏损运营；算法将流量优先分配给头部连锁和付费推广商户，独立小餐厅需额外购买广告位才能获得基本曝光；泰国穆斯林餐厅联会和马来西亚PRESMA公开抗议；Foodpanda于2025年5月因长期亏损关闭泰国业务，Deliveroo退出新加坡，印证了高佣金模式的不可持续性。",
+  "howMuch": "GrabFood佣金25%-40%（部分市场）；餐饮业利润率仅5%-15%；Foodpanda泰国2025年5月关闭；Deliveroo已退出新加坡；Wharton研究：平台出现后餐厅倒闭概率显著上升；印尼反垄断机构（KPPU）已立案调查Shopee/Lazada不公平行为。",
+  "current": "将平台佣金转嫁给消费者（外卖价比堂食贵20-30%）；减少平台菜单品类控制成本；同时注册多个平台分散依赖；放弃外卖专注堂食；被迫倒闭或转型。",
+  "trigger": "平台上市后从补贴期转向盈利期，将成本转嫁给商户；平台掌控流量分配规则，商户无议价权；餐厅与平台属地位严重不对等的合同关系；监管缺失，平台抽成标准无上限；疫情加速了消费者外卖习惯固化，商户对平台形成单向依赖。",
+  "evidence": [
+    {
+      "source": "Bangkok Post / Focus Malaysia / SETHLUI.com / Vulcan Post / Wharton Magazine (Fall/Winter 2025)",
+      "metrics": "GrabFood佣金25-40%；Foodpanda泰国2025年5月关闭；Wharton研究证实平台提高餐厅倒闭率",
+      "quote": "Thailand's Muslim restaurant association publicly complained that Grab's commission rate reaches 35%; Singapore's Restaurant Association said platform fees of 25-32% are deeply unfair to an industry operating on 'razor-thin margins'.",
+      "url": "https://www.bangkokpost.com/business/general/2900000/grab-food-commission"
+    }
+  ]
+}

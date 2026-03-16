@@ -1,0 +1,20 @@
+{
+  "id": 28,
+  "title": "新加坡租金年涨幅30%-70%，85%租客叫苦，70%年轻人因此推迟生育",
+  "round": 10,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "新加坡本地年轻租客（18-35岁）和外籍专业人才，他们无法申请政府补贴组屋，只能依赖价格飙涨的私人租赁市场。",
+  "scene": "租约到期续租时房东开口涨租50%-70%（月租从$4000涨到$6500、从$7000涨到$11000），租客面临要么接受、要么立即搬走的选择，而备选的私人租房市场同样涨价剧烈，最终只能迁往马来西亚、泰国或回国。",
+  "howMuch": "85%租客认为租金过高；74%续租时遭遇大幅涨价；2022年整体租金涨幅30%（15年最快）；50%外籍人士租金涨幅超40%；70%外资/本地企业考虑将员工迁往他处。",
+  "current": "搬往马来西亚新山跨境通勤（成本降低但通勤耗时2-3小时）；接受涨价死撑；组建合租来分摊成本；直接离开新加坡。",
+  "trigger": "疫情期间供给减少、需求回升叠加通胀，2022年引爆危机；政府调控措施滞后；70%年轻人因此推迟或放弃生育，住房问题已演变为人口危机。",
+  "evidence": [
+    {
+      "source": "PropertyGuru 2024年租客调研 / Al Jazeera / Japan Times",
+      "metrics": "85%租客认为租金过高；74%续租涨价；70%年轻人推迟生育",
+      "quote": "We love living in Singapore but with the cost of living going up and wages not rising proportionally, this rent increase will cause a serious impact. We're leaving with a heavy heart.",
+      "url": "https://www.aljazeera.com/economy/2023/4/20/so-long-singapore-expats-flee-city-as-rents-go-through-the-roof"
+    }
+  ]
+}

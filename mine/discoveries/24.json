@@ -1,0 +1,20 @@
+{
+  "id": 24,
+  "title": "东南亚近千万年轻人毕业即失业，学校教理论企业要实战，技能缺口无人填补",
+  "round": 8,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "印尼、越南的15-24岁青年群体，尤其是刚毕业的大专/本科生，他们拿到文凭却无法满足雇主对数字技能和实操经验的要求。",
+  "scene": "毕业生进入求职市场后发现课堂所学与岗位要求脱节，企业被迫从头培训新人；同时职业培训体系落后，缺乏有效学徒项目；AI崛起又新增了原本未知的技能要求，年轻人陷入既无工作又无培训渠道的双重困境。",
+  "howMuch": "印尼近1000万Z世代被列为NEET（不在教育/就业/培训中）；越南2025年底NEET青年140万，失业青年135万；企业每招一名应届生需承担额外的完整再培训成本。",
+  "current": "部分人自学YouTube/Coursera但缺乏体系和实践环境；等待政府职业培训项目（名额少、效果差）；接受低薪岗位积累经验；直接NEET躺平。",
+  "trigger": "AI浪潮加速了技能要求迭代，教育体系4年课程周期完全跟不上；疫情后经济复苏缓慢导致企业招聘预算收紧；东南亚数字经济高速增长但人才供给严重滞后。",
+  "evidence": [
+    {
+      "source": "Al Jazeera / ANTARA News / VnExpress",
+      "metrics": "印尼NEET近1000万；越南NEET 140万；越南失业青年135万（10.4%）",
+      "quote": "Many students after graduation lack practical skills and do not meet job requirements, forcing businesses to retrain from the beginning.",
+      "url": "https://hr.asia/asean/urgent-need-to-improve-vietnams-young-labourers-skills/"
+    }
+  ]
+}

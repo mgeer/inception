@@ -1,0 +1,20 @@
+{
+  "id": 38,
+  "title": "马来西亚/泰国年轻人买房成幻梦：房价收入比高达24倍，首购族被永久挡在门外",
+  "round": 13,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "马来西亚和泰国的25-40岁千禧一代，尤其是在吉隆坡、曼谷等城市工作的普通上班族，他们收入增长停滞但面对飞涨的房价和租金。",
+  "scene": "吉隆坡房价中位数56万令吉，远超政府定义的可负担上限30万令吉；泰国房价收入比高达24倍，毕业生起薪15,000泰铢十年未涨；49%泰国千禧一代还须赡养父母，储蓄空间被进一步压缩；想买买不起，只能租，但马来西亚月租也涨至2,052令吉且还在上升。",
+  "howMuch": "马来西亚吉隆坡房价中位数56万令吉（政府可负担标准30万）；泰国房价收入比24倍；马来西亚月均租金2,052令吉（2020年以来最高）；49%泰国千禧一代赡养父母为购房最大障碍。",
+  "current": "继续租房无限期等待（同时租金也在涨）；与父母同住积累首付（但赡养责任又消耗收入）；购买远离市中心的低价房（通勤成本高）；放弃购房计划专注消费。",
+  "trigger": "城市化加速推高土地和建设成本；政府可负担住房建设速度远低于需求增长；薪资增长长期落后于通胀；银行贷款门槛导致年轻购房者无法获得足额贷款。",
+  "evidence": [
+    {
+      "source": "Muslim Network TV / KL Property Talk / Nation Thailand / DDproperty Survey",
+      "metrics": "KL房价中位56万令吉vs可负担上限30万；泰国房价/收入比24倍；月租2052令吉历史新高",
+      "quote": "A decade has passed since the minimum monthly wage for new graduates was set at 15,000 baht, but during that period the cost of living has soared.",
+      "url": "https://www.nationthailand.com/thailand/economy/40035431"
+    }
+  ]
+}

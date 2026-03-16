@@ -1,0 +1,20 @@
+{
+  "id": 37,
+  "title": "印尼Grab/Gojek司机17小时仅赚$7，数万人大罢工要求平台佣金从20%降至10%",
+  "round": 13,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "印尼数百万Grab/Gojek网约车和外卖配送司机，尤其是以此为主要生计的全职骑手，他们属于无固定雇主的零工经济从业者，缺乏劳动保护。",
+  "scene": "平台持续提高佣金抽成（当前20%），同时降低车费定价和补贴，一名女司机曾日赚$19，如今17小时工作日仅能赚不足$7；为追赶收入被迫超时驾驶，路上死亡事故频发；2025年5月数万名司机在雅加达、泗水等城市举行大规模抗议。",
+  "howMuch": "日收入从$19骤降至$7以下（降幅>60%）；平台佣金20%，司机要求封顶10%；数万名司机参与全国罢工；平台明确拒绝降低佣金；过度劳累导致路上死亡事故。",
+  "current": "参与工会抗议（收效甚微）；减少接单保护自身安全（收入更低）；兼职多个平台（Grab+Gojek+Shopee Food）；被迫接受现状。",
+  "trigger": "平台上市后转向盈利导向，削减司机补贴；平台间价格战将成本转嫁给司机；印尼无零工经济劳动保护法律；骑手数量持续增加加剧竞争。",
+  "evidence": [
+    {
+      "source": "Malay Mail / Asia-Pacific Solidarity Network",
+      "metrics": "日收入降幅>60%；17小时赚不足$7；数万人大罢工；平台抽佣20%拒降",
+      "quote": "Many of our friends got into accidents on the road, died on the road because they have to chase their income. It's about lives, not about business calculation.",
+      "url": "https://www.malaymail.com/news/world/2025/05/20/its-about-lives-thousands-rally-across-indonesia-as-e-hailing-food-delivery-riders-demand-10pc-cap-on-gojek-and-grab-fees/177500"
+    }
+  ]
+}

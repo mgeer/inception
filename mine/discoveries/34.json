@@ -1,0 +1,20 @@
+{
+  "id": 34,
+  "title": "东南亚女性创业者仅获3.2%融资，女性早期融资连续两年下滑共计近40%",
+  "round": 12,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "东南亚（菲律宾、印尼、新加坡、马来西亚、越南等）寻求融资的女性创始人，尤其是全女性团队或女性主导的初创企业，在种子轮到A轮阶段最受影响。",
+  "scene": "女性创始人准备好产品和商业计划去pitch投资人，却系统性地获得比男性少得多的会面机会、更低的估值和更小的支票；即便成功融资，单笔中位数($250万)也不到男性($500万)的一半，平均融资额更仅为男性的7.5%。",
+  "howMuch": "2025年全女团队仅获4.6%交易数量、3.2%融资金额（$1.7亿）；男性团队获75.1%交易数量、83.7%融资金额；早期融资同比再降31%（上年已降11%），两年累计下滑约39%。",
+  "current": "转向自筹资金（Bootstrapping）；申请政府/NGO扶持项目（金额小、审批慢）；加入女性创业网络寻求圈内资源；接受不平等条款以换取融资机会。",
+  "trigger": "整体风投市场收缩加剧资本向"安全标的"集中，女性创始人被系统性视为更高风险；LP压力推动VC追求短期回报，男性网络效应强化资本流向；早期阶段缺乏系统性女性天使投资人生态。",
+  "evidence": [
+    {
+      "source": "DealStreetAsia Women Founders in SE Asia: 2025 Funding Review",
+      "metrics": "全女团队：4.6%交易，3.2%金额；早期融资2024年-11%，2025年-31%",
+      "quote": "All-women teams secured only 21 equity funding rounds (4.6% of total deal volume) and captured just 3.2% of total capital raised in 2025, raising $170 million total.",
+      "url": "https://www.dealstreetasia.com/stories/women-founders-in-sea-2025-funding-review-475443"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": 39,
+  "title": "东南亚超2/3中小企业有融资需求却被银行拒之门外，抵押+信用+文件三重门槛制造系统性排斥",
+  "round": 13,
+  "date": "2026-03-16",
+  "market": "东南亚",
+  "who": "东南亚（印尼、菲律宾、越南、马来西亚等）中小规模企业主，尤其是非正规经营、缺乏不动产抵押物和完整财务记录的小商户、个体老板和微型企业。",
+  "scene": "小商户向银行申请经营贷款，被要求提供不动产抵押（多数人没有）、多年完整信用记录（非正规经营无法提供）和详细财务文件（账本不规范）；同时规模太小进不了商业银行，又太大用不了微型金融，卡在"缺失中间层"，只能依赖高息民间借贷。",
+  "howMuch": "超2/3东南亚中小企业需贷款但无法获得可负担信贷；数字贷款2025年预计达180亿美元（年增33%，显示正规渠道缺口大）；印尼和菲律宾是最关键的缺口市场。",
+  "current": "向家人/亲友借款（金额有限）；依赖高利率民间贷款公司；接受供应商账期延长（变相融资）；放弃扩张维持现状；尝试新兴数字贷款平台（但覆盖率和额度仍有限）。",
+  "trigger": "传统银行风控体系针对大企业设计，不适配中小企业；东南亚大量企业属于非正规经济；信用评估基础设施（征信体系）不完善；银行追求低风险利润率，不愿为中小企业开发专属产品。",
+  "evidence": [
+    {
+      "source": "World Economic Forum - Tackling the digital financing gap to support SMEs in ASEAN (2025)",
+      "metrics": "超2/3中小企业需融资但无法获得；2025年数字贷款180亿美元（年增33%）",
+      "quote": "A significant segment of businesses fall between the cracks of the financial system—they are too large for microfinance but too small, risky, or informal for commercial banks.",
+      "url": "https://www.weforum.org/stories/2025/10/digital-finance-gap-support-smes-asean/"
+    }
+  ]
+}
